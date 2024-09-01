@@ -9,6 +9,7 @@ namespace assetsApi.Controllers
     public class WeaponsController : ControllerBase
     {
 
+
         //יצירת נשק
         [HttpPost("create")]
         [Produces("application/json")]
