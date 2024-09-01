@@ -11,8 +11,8 @@
 
         public async Task Create(Soldier soldier)
         {
-            _context.Soldiers.Add(soldier);
-            _context.SaveChanges();
+            await _context.Soldiers.Add(soldier);
+            await _context.SaveChangesAsync();
         }
 
 
@@ -32,6 +32,24 @@
         {
             Soldier soldier = await  _context.Soldiers.FindAsync(id);
             return soldier;
+        }
+
+
+        public async Task Update(Guid id, Soldier UpSoldier)
+        {
+            Soldier soldier = await _context.Soldiers.FindAsync(id);
+            soldier = UpSoldier;
+            _context.Update(soldier);
+            await _context.SaveChangesAsync();
+        }
+
+
+        public async Task changeStatus(Guid id, SoldierStatus soldierStatus)
+        {
+            Soldier soldier = await _context.Soldiers.FindAsync(id);
+            soldier.Status = soldierStatus;
+            _context.Update(soldier);
+            await _context.SaveChangesAsync();
         }
 
     }
