@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "JAtVW09gzSs=",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\repos\\Assets progect\\militaryAssets\\mvc\\assetsMvc\\assetsMvc.csproj",
+=======
+  "dgSpecHash": "qY0RwbFHEFo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\Assent\\militaryAssets\\mvc\\assetsMvc\\assetsMvc.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [],
   "logs": []
 }

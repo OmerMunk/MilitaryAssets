@@ -8,11 +8,16 @@
     "net8.0": []
   },
   "packageFolders": {
+<<<<<<< Updated upstream
     "C:\\Users\\user\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
+>>>>>>> Stashed changes
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "C:\\Users\\user\\source\\repos\\Assets progect\\militaryAssets\\mvc\\assetsMvc\\assetsMvc.csproj",
       "projectName": "assetsMvc",
       "projectPath": "C:\\Users\\user\\source\\repos\\Assets progect\\militaryAssets\\mvc\\assetsMvc\\assetsMvc.csproj",
@@ -21,6 +26,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Assent\\militaryAssets\\mvc\\assetsMvc\\assetsMvc.csproj",
+      "projectName": "assetsMvc",
+      "projectPath": "C:\\Users\\admin\\Desktop\\Assent\\militaryAssets\\mvc\\assetsMvc\\assetsMvc.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\Assent\\militaryAssets\\mvc\\assetsMvc\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Stashed changes
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -70,7 +85,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< Updated upstream
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes
       }
     }
   }
