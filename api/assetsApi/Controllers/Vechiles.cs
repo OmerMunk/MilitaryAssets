@@ -18,11 +18,7 @@ namespace assetsApi.Controllers
         [HttpPost]
         public StatusCodeResult Post([FromBody] Vehicle vehicle)
         {
-            if (_vehiclesService.IsCreated)
-            {
-                return StatusCode(StatusCodes.Status201Created);
-            }
-            return StatusCode(StatusCodes.Status400BadRequest);
+            return _vehiclesService.IsCreated(vehicle) ? StatusCode(StatusCodes.Status201Created) : StatusCode(StatusCodes.Status400BadRequest);
         }
     }
 }
