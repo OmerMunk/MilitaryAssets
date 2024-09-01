@@ -10,7 +10,7 @@ namespace assetsApi.Controllers
     {
 
         //יצירת נשק
-        [HttpPost("/create")]
+        [HttpPost("create")]
         [Produces("application/json")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         public async Task<IActionResult> CreateWeapon([FromBody] weapon weapon)
@@ -19,11 +19,12 @@ namespace assetsApi.Controllers
             return Ok(newweapon);
         }
 
-        [HttpPut("/edit")]
+        //עדכון נשק
+        [HttpPut("edit")]
         public async Task<IActionResult> UpdetWeapon([FromBody] weapon weapon)
         {
             var updetweapon = await WeaponsServices.updetweapon(weapon);
-            return Ok(newweapon);
+            return Ok(updetweapon);
         }
     }
 }
