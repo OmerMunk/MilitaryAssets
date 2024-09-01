@@ -8,28 +8,29 @@ namespace assetsApi.Controllers
     [ApiController]
     public class VehicleController : ControllerBase
     {
-        private readonly VehicleService _vehicleService;
-
-        public VehicleController(VehicleService vehicleService)
-        {
-            this._vehicleService = vehicleService;
-        }
+      
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> Updatevehicle(int id, Vehicle Vehicle)
+        public async Task<ActionResult> Updatevehicle(Vehicle Vehicle)
         {
-            if (id == 0)
-            {
+           
                 return BadRequest(new { message = "No Id found" });
-                if (Vehicle == null)
-                {
-                    return BadRequest(new { message = "Vehicle is null" });
-                    bool res = _vehicleService.UpdateHandler(id, Vehicle);
+            if (Vehicle == null)
+            {
+                return BadRequest(new { message = "Vehicle is null" });
+            }
+                    bool res = await _CarsService.UpdateVehicle(Vehicle);
 
                     if (res) { return StatusCode(StatusCodes.Status200OK); }
                     return StatusCode(StatusCodes.Status400BadRequest);
-                }
-            }
+                
+            
+        }
+        [HttpGet("{Model}")]
+        public async Task<List<Vehicle>> ActionResult()
+        {
+
+           return await _Carsservice.GetAllbyModel(Model);
         }
 
     }
