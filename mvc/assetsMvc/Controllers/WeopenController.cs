@@ -1,10 +1,16 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using assetsMvc.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace assetsMvc.Controllers
 {
     public class WeopenController : Controller
     {
+        private readonly WeapondService _weapondService;
+        public WeopenController (WeapondService weapondService ) 
+        {
+            _weapondService = weapondService;
+        }
         // GET: WeopenController
         public ActionResult Index()
         {
