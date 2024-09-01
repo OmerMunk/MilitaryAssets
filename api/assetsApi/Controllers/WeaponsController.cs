@@ -16,9 +16,14 @@ namespace assetsApi.Controllers
         [HttpGet("units/id")]
         public async Task<IActionResult> SeveralByUnits(Guid guidUnit)
         {
-            var weponByUnit = await _weaponsService.GetWeponByUnit(guidUnit);
-            return StatusCode(StatusCodes.Status200OK, weponByUnit);
+            var weponByUnitList = await _weaponsService.GetWeponByUnit(guidUnit);
+            return StatusCode(StatusCodes.Status200OK, weponByUnitList);
         }
-        
+        [HttpGet("activate")]
+        public async Task<IActionResult> GetAllActiveWepons()
+        {
+            var acyiveWeponList = await _weaponsService.GetAllActiveWepons();
+            return StatusCode(StatusCodes.Status200OK, acyiveWeponList);
+        }
     }
 }
