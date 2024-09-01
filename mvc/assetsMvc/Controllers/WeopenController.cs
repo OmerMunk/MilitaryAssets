@@ -16,7 +16,6 @@ namespace assetsMvc.Controllers
         {
             return View();
         }
-
         // GET: WeopenController/Create
         public ActionResult Create()
         {
