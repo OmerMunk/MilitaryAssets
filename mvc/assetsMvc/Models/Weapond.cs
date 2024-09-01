@@ -5,8 +5,8 @@ namespace assetsMvc.Models
     public class Weapond
     {
         public Guid Id;
-        public Guid PersonId;
-        public Guid VehicleId;
+        public Guid? PersonId;
+        public Guid? VehicleId;
         public Guid Unit;
         public string Name;
         public bool Status;
