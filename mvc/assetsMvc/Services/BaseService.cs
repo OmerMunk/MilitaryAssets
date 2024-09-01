@@ -5,7 +5,7 @@ namespace assetsMvc.Services
 {
     public class BaseService<T> : IService<T>
     {
-        private readonly HttpClient _httpClient;
+        protected readonly HttpClient _httpClient;
         private string _getAllUrl;
         private string _getByIdUrl;
         private string _addNewUrl;
