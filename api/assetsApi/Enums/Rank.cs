@@ -1,6 +1,12 @@
 ﻿namespace assetsApi.Enums
 {
-    public class Rank
+    public enum Rank
     {
+        Turai,
+        Aluf,
+        AlufMishne,
+        RavSeren,
+        Seren,
+        Segen
     }
 }

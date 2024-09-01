@@ -1,6 +1,9 @@
 ﻿namespace assetsApi.Enums
 {
-    public class SoldierStatus
+    public enum SoldierStatus
     {
+        OnVication,
+        OutOfService,
+        Active
     }
 }

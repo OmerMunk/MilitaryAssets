@@ -1,6 +1,9 @@
 ﻿namespace assetsApi.Enums
 {
-    public class Status
+    public enum Status
     {
+        Active,
+        OutOfService,
+        Maintenance
     }
 }
