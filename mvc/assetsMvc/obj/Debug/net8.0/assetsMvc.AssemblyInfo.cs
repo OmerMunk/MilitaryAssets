@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("assetsMvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e518e81c60e74c93f84fbe2f43937af1bee593cc")]
 [assembly: System.Reflection.AssemblyProductAttribute("assetsMvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("assetsMvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
