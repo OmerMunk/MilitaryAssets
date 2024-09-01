@@ -12,5 +12,10 @@
             var activeWeponList = _DbService.GetAllActiveWeponsFromDb();
             return activeWeponList;
         }
+        public async Task<Weapon> GetWeponById(Guid id)
+        {
+            var wepon = await _DbService.GetWeponByIdFromDb(id);
+            return wepon;
+        }
     }
 }
