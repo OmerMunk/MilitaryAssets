@@ -17,16 +17,31 @@ namespace assetsApi.Controllers
 
         // קבל כל הרכבים
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Vehicle>>> GetAllVehicle()
+        public async Task<ActionResult<IEnumerable<Vehicle>>> GetAllVehicles()
         {
             return await _VehicleService.Vehicles.ToListAsync();
         }
 
         // הצג רכב לפי תעודת זהות
         [HttpGet("{id}")]
-        public async Task<ActionResult<Vehicle>> GetEntity(int id)
+        public async Task<ActionResult<Vehicle>> GetVehicleById(Guid id)
         {
             Vehicle? vehicle = await this._vehicleService.Vehicles.FindAsync(id);
+            if (vehicle == null)
+            {
+                return NotFound();
+            }
+
+
+            return vehicle;
+        }
+
+
+        // הצג רכב לפי לוחית רישוי
+        [HttpGet("/LicensePlate{LicensePlate}")]
+        public async Task<ActionResult<Vehicle>> GetVehicleByLicensePlate(string LicensePlate)
+        {
+            Vehicle? vehicle = await this._vehicleService.Vehicles.FindAsync(LicensePlate);
             if (vehicle == null)
             {
                 return NotFound();
