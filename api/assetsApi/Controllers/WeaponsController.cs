@@ -7,6 +7,14 @@ namespace assetsApi.Controllers
     [ApiController]
     public class WeaponsController : ControllerBase
     {
+        [HttpPost("/create")]
+        [Produces("application/json")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        public async Task<IActionResult> CreateWeapon([FromBody] weapon weapon)
+        {
+                       
+        }
 
+     
     }
 }

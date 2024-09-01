@@ -428,23 +428,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\public.DESKTOP-8M695L2\\.nuget\\packages\\": {},
+    "C:\\Users\\internet\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\public.DESKTOP-8M695L2\\Desktop\\dovi\\assets\\militaryAssets\\api\\assetsApi\\assetsApi.csproj",
+      "projectUniqueName": "C:\\Users\\internet\\source\\repos\\assets\\militaryAssets\\api\\assetsApi\\assetsApi.csproj",
       "projectName": "assetsApi",
-      "projectPath": "C:\\Users\\public.DESKTOP-8M695L2\\Desktop\\dovi\\assets\\militaryAssets\\api\\assetsApi\\assetsApi.csproj",
-      "packagesPath": "C:\\Users\\public.DESKTOP-8M695L2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\public.DESKTOP-8M695L2\\Desktop\\dovi\\assets\\militaryAssets\\api\\assetsApi\\obj\\",
+      "projectPath": "C:\\Users\\internet\\source\\repos\\assets\\militaryAssets\\api\\assetsApi\\assetsApi.csproj",
+      "packagesPath": "C:\\Users\\internet\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\internet\\source\\repos\\assets\\militaryAssets\\api\\assetsApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\public.DESKTOP-8M695L2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\internet\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -501,7 +501,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

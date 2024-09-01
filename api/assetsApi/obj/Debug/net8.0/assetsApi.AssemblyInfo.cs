@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("assetsApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e518e81c60e74c93f84fbe2f43937af1bee593cc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00ea558ce1de7b53b3bc6c0f3807fb4614f05196")]
 [assembly: System.Reflection.AssemblyProductAttribute("assetsApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("assetsApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
