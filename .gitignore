@@ -9,7 +9,7 @@
 *.sln.docstates
 
 # User-specific folders
-.vs/
+**/.vs/
 
 # Mono Auto Generated Files
 mono_crash.*
@@ -28,8 +28,8 @@ $RECYCLE.BIN/
 .vscode/
 
 # DotNet artifacts
-bin/
-obj/
+**/bin/
+**/obj/
 
 # Rider project files
 .idea/
