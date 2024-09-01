@@ -16,7 +16,7 @@
                             vehicle.Status = Status.Active;
                             //Here I need to know the names of the services to send it to him
                             return true;
-                        }
+                        } else { return false; }
                     } else { return false; }
                 } else { return false; }
             } else { return false; }
