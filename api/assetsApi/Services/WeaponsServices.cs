@@ -8,5 +8,10 @@ namespace assetsApi.Services
         {
             await DBServis.createweapon(weapon);
         }
+
+        public async Task<IActionResult> updetweapon(Weapon weapon)
+        {
+            await DBServis.updetweapon(weapon);
+        }
     }
 }

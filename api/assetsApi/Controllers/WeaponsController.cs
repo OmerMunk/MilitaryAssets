@@ -19,6 +19,11 @@ namespace assetsApi.Controllers
             return Ok(newweapon);
         }
 
-        
+        [HttpPut("/edit")]
+        public async Task<IActionResult> UpdetWeapon([FromBody] weapon weapon)
+        {
+            var updetweapon = await WeaponsServices.updetweapon(weapon);
+            return Ok(newweapon);
+        }
     }
 }
