@@ -15,16 +15,14 @@ namespace assetsApi.Controllers
 
         [HttpGet("{owner_id}")]
         public async Task<IActionResult> GetWeaponByOwner(Guid owner_id)
-        {
-            var weapon = await GetWeaponByOwner(owner_id);
+        {            
+            return await GetWeaponByOwnerAsync(owner_id);
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAllWeapons()
-        {
-            var AllWeapons = await GetAllWeponsAsync();
-
-            return Ok(AllWeapons);
+        {           
+            return await GetAllWeponsAsync();
         }
     }
 }
