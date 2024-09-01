@@ -11,9 +11,12 @@
 
         public async Task Create(Soldier soldier)
         {
-            await _context.Soldiers.Add(soldier);
-            await _context.SaveChangesAsync();
-        }
+            if(soldier != null)
+            {
+                await _context.Soldiers.Add(soldier);
+                await _context.SaveChangesAsync();
+            }
+          }
 
 
         public async Task<List<Soldier>> GetAll()
@@ -31,6 +34,7 @@
         public async Task<Soldier> GetOne(Guid id)
         {
             Soldier soldier = await  _context.Soldiers.FindAsync(id);
+            if(soldier == null) { return null; }
             return soldier;
         }
 
@@ -38,9 +42,13 @@
         public async Task Update(Guid id, Soldier UpSoldier)
         {
             Soldier soldier = await _context.Soldiers.FindAsync(id);
-            soldier = UpSoldier;
-            _context.Update(soldier);
-            await _context.SaveChangesAsync();
+            if(UpSoldier != null && soldier != null)
+            {
+                soldier = UpSoldier;
+                _context.Update(soldier);
+                await _context.SaveChangesAsync();
+            }
+            
         }
 
 
