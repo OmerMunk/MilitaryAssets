@@ -1,7 +1,6 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
-namespace assetsApi.Data;
+namespace assetsApi.Data
 {
     public class ApplicationDbContext : DbContext
     {
@@ -20,6 +19,3 @@ namespace assetsApi.Data;
 
     }
 }
-
-
-

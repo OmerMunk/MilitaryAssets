@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "/Users/omermunk/RiderProjects/assets/api/assetsApi/assetsApi.csproj": {}
+    "C:\\kodcode2\\militaryAssets\\api\\assetsApi\\assetsApi.csproj": {}
   },
   "projects": {
-    "/Users/omermunk/RiderProjects/assets/api/assetsApi/assetsApi.csproj": {
+    "C:\\kodcode2\\militaryAssets\\api\\assetsApi\\assetsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/omermunk/RiderProjects/assets/api/assetsApi/assetsApi.csproj",
+        "projectUniqueName": "C:\\kodcode2\\militaryAssets\\api\\assetsApi\\assetsApi.csproj",
         "projectName": "assetsApi",
-        "projectPath": "/Users/omermunk/RiderProjects/assets/api/assetsApi/assetsApi.csproj",
-        "packagesPath": "/Users/omermunk/.nuget/packages/",
-        "outputPath": "/Users/omermunk/RiderProjects/assets/api/assetsApi/obj/",
+        "projectPath": "C:\\kodcode2\\militaryAssets\\api\\assetsApi\\assetsApi.csproj",
+        "packagesPath": "C:\\Users\\shalo\\.nuget\\packages\\",
+        "outputPath": "C:\\kodcode2\\militaryAssets\\api\\assetsApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/omermunk/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\shalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,12 +35,31 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -62,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/8.0.4/libexec/sdk/8.0.104/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
